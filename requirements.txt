@@ -1,5 +1,6 @@
 streamlit
+PyYAML
+streamlit-authenticator
 pandas
 openpyxl
 gdown
-streamlit-authenticator
