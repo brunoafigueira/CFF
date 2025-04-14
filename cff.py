@@ -23,10 +23,17 @@ authenticator = stauth.Authenticate(
 # ======================================
 # 2. PÁGINA DE LOGIN
 # ======================================
-name, authentication_status, username = authenticator.login(location='main')
+auth_result = authenticator.login('Login', location='main')
 
-if not authentication_status:
-    st.stop()  # Impede o acesso ao resto do app se não autenticado
+if auth_result is None:
+    st.stop()
+
+if not auth_result["authenticated"]:
+    st.error("Usuário ou senha inválidos.")
+    st.stop()
+
+name = auth_result["name"]
+username = auth_result["username"]
 
 # ======================================
 # 3. APLICATIVO PRINCIPAL (após login)
