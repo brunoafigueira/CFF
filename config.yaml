@@ -1,0 +1,19 @@
+credentials:
+  usernames:
+    bruno:
+      email: perittajud@gmail.com
+      name: Bruno Figueira
+      password: "$2b$12$V6k.o1PbA3D4rYa37vO47uWCCL8UmVQXRJm.HfTqVDWAsLz0IPU/e"
+    cff:
+      email: contato@cffadv.com.br
+      name: CFF Advogados
+      password: "$2b$12$L3da9CXL1aQhpyT0ayI2O.Rrinfv0Lg6OOXAVpvwp2buX3y1l.wMS"
+cookie:
+  name: auth_token
+  key: sua_chave_secreta_aleatoria  # Gere uma chave complexa!
+  expiry_days: 1
+
+preauthorized:
+  emails:
+    - perittajud@gmail.com     # Permite auto-registro (opcional)
+    - contato@cffadv.com.br    # Se desejar
