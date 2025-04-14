@@ -23,7 +23,7 @@ authenticator = stauth.Authenticate(
 # ======================================
 # 2. PÁGINA DE LOGIN
 # ======================================
-name, authentication_status, username = authenticator.login('Login', 'main')
+name, authentication_status, username = authenticator.login(location='main')
 
 if not authentication_status:
     st.stop()  # Impede o acesso ao resto do app se não autenticado
