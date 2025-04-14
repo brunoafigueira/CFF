@@ -25,14 +25,15 @@ authenticator = stauth.Authenticate(
 # ======================================
 auth_result = authenticator.login(location='main')
 
-
 if auth_result is None:
+    st.warning("🔒 Por favor, insira seu usuário e senha.")
     st.stop()
 
 if not auth_result["authenticated"]:
-    st.error("Usuário ou senha inválidos.")
+    st.error("❌ Usuário ou senha incorretos.")
     st.stop()
 
+# Se passou daqui, está autenticado:
 name = auth_result["name"]
 username = auth_result["username"]
 
