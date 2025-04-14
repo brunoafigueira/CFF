@@ -8,11 +8,12 @@ credentials:
       email: contato@cffadv.com.br
       name: CFF Advogados
       password: "$2b$12$L3da9CXL1aQhpyT0ayI2O.Rrinfv0Lg6OOXAVpvwp2buX3y1l.wMS"
+
 cookie:
   name: auth_token
-  key: sua_chave_secreta_aleatoria  # Gere uma chave complexa!
+  key: chave_secreta_segura123   # Pode inventar uma chave complexa aqui
   expiry_days: 1
 
-preauthorized:
-    - perittajud@gmail.com     # Permite auto-registro (opcional)
-    - contato@cffadv.com.br    # Se desejar
+preauthorized_emails:
+  - perittajud@gmail.com
+  - contato@cffadv.com.br
