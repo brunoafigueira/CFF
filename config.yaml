@@ -14,6 +14,5 @@ cookie:
   expiry_days: 1
 
 preauthorized:
-  emails:
     - perittajud@gmail.com     # Permite auto-registro (opcional)
     - contato@cffadv.com.br    # Se desejar
