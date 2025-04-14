@@ -23,7 +23,8 @@ authenticator = stauth.Authenticate(
 # ======================================
 # 2. PÁGINA DE LOGIN
 # ======================================
-auth_result = authenticator.login('Login', location='main')
+auth_result = authenticator.login(location='main')
+
 
 if auth_result is None:
     st.stop()
